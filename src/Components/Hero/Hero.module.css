@@ -1,0 +1,6 @@
+.hero_container {
+  display: flex;
+}
+.hero_col {
+  width: 50%;
+}
