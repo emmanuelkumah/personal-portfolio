@@ -1,8 +1,97 @@
 .portfolio_container {
   position: relative;
+  text-align: center;
 }
-.blob_img {
-  position: absolute;
-  width: 40%;
-  left: -20%;
+.portfolio-row {
+  margin-top: 2rem;
+  display: flex;
+  padding: 2rem 4rem;
+}
+.portfolio-row-2 {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.portfolio-col {
+  width: 50%;
+}
+.portfolio-img {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+  border: 5px solid #ff0066;
+}
+.portfolio-content {
+  position: relative;
+  padding-left: 2rem;
+}
+.portfolio-content > p,
+.portfolio-content-2 > p {
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+.portfolio-content > h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.portfolio-content-2 > h2,
+.portfolio-content-2 > p {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+.portfolio-details {
+  z-index: 999;
+  position: relative;
+  z-index: 2;
+  right: 15%;
+  background-color: var(--sec-color);
+  padding: 1rem 2rem;
+  text-align: right;
+}
+.portfolio-details-2 {
+  z-index: 999;
+  position: relative;
+  z-index: 2;
+  left: 5%;
+  background-color: var(--sec-color);
+  padding: 1rem 2rem;
+  text-align: right;
+}
+
+.portfolio-icons {
+  margin-top: 1.4rem;
+  display: flex;
+  gap: 3rem;
+}
+.p-icon {
+  font-size: 2rem;
+  color: white;
+}
+
+.p-icon-2 {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+.p-icon:hover,
+.p-icon:active {
+  color: var(--sec-color);
+  cursor: pointer;
+  transform: scale(1.4);
+}
+.title_border {
+  position: relative;
+  top: 10px;
+}
+.large-border {
+  background: var(--sec-color);
+  width: 70px;
+  height: 4px;
+  display: inline-block;
+}
+
+.small-border {
+  width: 20px;
+  height: 4px;
+  display: inline-block;
+  background: #fff;
+  margin: 0 10px;
 }

@@ -1,0 +1,29 @@
+.tech-title {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.tech-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+.title_border {
+  position: relative;
+  top: 10px;
+}
+.large-border {
+  background: var(--sec-color);
+  width: 70px;
+  height: 4px;
+  display: inline-block;
+}
+
+.small-border {
+  width: 20px;
+  height: 4px;
+  display: inline-block;
+  background: #fff;
+  margin: 0 10px;
+}
