@@ -1,0 +1,31 @@
+.about_container {
+  margin-top: 2rem;
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+}
+.about_container > h2 {
+  font-size: 2.5rem;
+}
+.about_container > p {
+  padding: 2rem 5rem;
+  font-size: 1.2rem;
+}
+.title_border {
+  position: relative;
+  bottom: 10px;
+}
+.large-border {
+  background: var(--sec-color);
+  width: 70px;
+  height: 4px;
+  display: inline-block;
+}
+
+.small-border {
+  width: 20px;
+  height: 4px;
+  display: inline-block;
+  background: #fff;
+  margin: 0 10px;
+}

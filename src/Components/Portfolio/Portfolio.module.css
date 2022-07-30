@@ -1,0 +1,8 @@
+.portfolio_container {
+  position: relative;
+}
+.blob_img {
+  position: absolute;
+  width: 40%;
+  left: -20%;
+}
