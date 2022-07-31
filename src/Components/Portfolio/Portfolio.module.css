@@ -96,3 +96,28 @@
   background: #fff;
   margin: 0 10px;
 }
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .portfolio_container > h2 {
+    margin-top: 1rem;
+  }
+  .portfolio-row {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .portfolio-row-2 {
+    flex-direction: column;
+  }
+  .portfolio-col {
+    width: 100%;
+  }
+  .portfolio-content,
+  .portfolio-content-2 {
+    margin-top: 1.4rem;
+    padding-left: 0;
+  }
+  .portfolio-details,
+  .portfolio-details-2 {
+    padding: 1rem;
+  }
+}

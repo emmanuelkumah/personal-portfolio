@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <div>
       <section className={classes["portfolio_container"]} id="portfolio">
-        <h2>Some Things I have built</h2>
+        <h2>Cool Stuff I have Built</h2>
         <div className={classes["title_border"]}>
           <span className={classes["small-border"]}></span>
           <span className={classes["large-border"]}></span>
@@ -85,12 +85,11 @@ const Portfolio = () => {
         <div className={classes["portfolio-col"]}>
           <section className={classes["portfolio-content"]}>
             <p>Delivery</p>
-            <h2>Fit Lyf</h2>
+            <h2>Express Home Delivery</h2>
             <div className={classes["portfolio-details"]}>
               <p>
-                Fit Lyf is a web app that allows busy professionals access tons
-                of exercises to help engage in regular physical activities, and
-                boost endurance
+                Find the perfect route to delivery multiple items. Search places
+                of interest
               </p>
             </div>
             <div className={classes["portfolio-icons"]}>

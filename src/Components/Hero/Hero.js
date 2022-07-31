@@ -4,6 +4,7 @@ import selfImg from "../../assets/imageSelf.png";
 import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { SiHashnode } from "react-icons/si";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Hero = () => {
   return (
@@ -26,7 +27,9 @@ const Hero = () => {
             </p>
 
             <div className={classes["btn_container"]}>
-              <button>View portfolio</button>
+              <Link to="#portfolio" className={classes["btn-portfolio"]}>
+                <button>View portfolio</button>
+              </Link>
               <button>Download CV</button>
             </div>
           </section>
@@ -38,10 +41,35 @@ const Hero = () => {
           </div>
           <section className={classes["profiles"]}>
             <div className={classes["profiles_container"]}>
-              <FaLinkedinIn />
-              <AiFillGithub />
-              <FaTwitter />
-              <SiHashnode />
+              <a
+                href="https://www.linkedin.com/in/emmanuelfkumah/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaLinkedinIn />
+              </a>
+              <a
+                href="https://github.com/emmanuelkumah"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <AiFillGithub />
+              </a>
+              <a
+                href="https://twitter.com/emmanuelfkumah"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="https://efkumah.hashnode.dev/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {" "}
+                <SiHashnode />
+              </a>
             </div>
           </section>
         </div>

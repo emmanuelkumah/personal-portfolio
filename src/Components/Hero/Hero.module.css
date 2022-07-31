@@ -43,13 +43,18 @@
   border: none;
   gap: 2rem;
 }
-.btn_container > button:nth-child(1) {
+.btn-portfolio > button {
   border: none;
   background-color: var(--sec-color);
   color: var(--primary-color);
   border-radius: 20px;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
+}
+.btn-portfolio > button:hover,
+.btn-portfolio > button:active {
+  background-color: transparent;
+  border: 1px solid var(--sec-color);
 }
 .btn_container > button:nth-child(2) {
   background-color: transparent;
@@ -58,6 +63,11 @@
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   color: #fff;
+}
+.btn_container > button:nth-child(2):hover,
+.btn_container > button:nth-child(2):active {
+  background-color: var(--sec-color);
+  border: none;
 }
 .blob_img {
   position: absolute;
@@ -74,6 +84,14 @@
   gap: 3rem;
   flex-direction: column;
 }
+.profiles_container > a {
+  color: #fff;
+}
+.profiles_container > a:hover,
+.profiles_container > a:active {
+  transform: scale(1.5);
+  color: var(--sec-color);
+}
 .profiles_container::after {
   content: "";
   display: block;
@@ -86,4 +104,44 @@
   position: fixed;
   top: 20%;
   right: 10%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .hero_col {
+    width: 100%;
+  }
+  .hero_container {
+    flex-direction: column;
+  }
+  .hero_img {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .hero_top {
+    display: flex;
+  }
+  .blob_img {
+    top: 130%;
+    width: 17rem;
+    height: 12rem;
+  }
+
+  .btn_container {
+    flex-direction: column;
+  }
+  .btn-portfolio > button {
+    width: 80%;
+  }
+  .btn_container > button:nth-child(2) {
+    width: 80%;
+  }
+  .profiles {
+    top: 42%;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 601px) and (max-device-width: 1024px) {
+  /* Styles */
 }

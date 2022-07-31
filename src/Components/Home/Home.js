@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../About/About";
+import Footer from "../Footer/Footer";
 import Hero from "../Hero/Hero";
 import Nav from "../Nav/Nav";
 import Portfolio from "../Portfolio/Portfolio";
@@ -15,6 +16,7 @@ const Home = () => {
         <Portfolio />
         <Tech />
       </main>
+      <Footer />
     </div>
   );
 };
