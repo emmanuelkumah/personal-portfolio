@@ -1,6 +1,6 @@
 import React from "react";
-import { AiOutlineCloseSquare } from "react-icons/ai";
 import classes from "./Nav.module.css";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Nav = () => {
   return (
@@ -11,9 +11,15 @@ const Nav = () => {
         </section>
       </nav>
       <ul className={classes["nav_lists"]}>
-        <li>Home</li>
-        <li>About</li>
-        <li>Porfolio</li>
+        <Link to="#home" smooth className={classes["nav_item"]}>
+          <li>Home</li>
+        </Link>
+        <Link to="#about" smooth className={classes["nav_item"]}>
+          <li>About</li>
+        </Link>
+        <Link to="#portfolio" smooth className={classes["nav_item"]}>
+          <li>Portfolio</li>
+        </Link>
       </ul>
     </div>
   );

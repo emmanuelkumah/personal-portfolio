@@ -8,7 +8,7 @@ import { AiOutlineLink, AiOutlineGithub } from "react-icons/ai";
 const Portfolio = () => {
   return (
     <div>
-      <section className={classes["portfolio_container"]}>
+      <section className={classes["portfolio_container"]} id="portfolio">
         <h2>Some Things I have built</h2>
         <div className={classes["title_border"]}>
           <span className={classes["small-border"]}></span>

@@ -8,7 +8,7 @@ import { SiHashnode } from "react-icons/si";
 const Hero = () => {
   return (
     <div>
-      <header className={classes["hero_container"]}>
+      <header className={classes["hero_container"]} id="home">
         <div className={classes["hero_col"]}>
           <section className={classes["hero_content"]}>
             <div className={classes["hero_top"]}>
