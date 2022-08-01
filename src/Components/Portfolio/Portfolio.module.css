@@ -121,3 +121,27 @@
     padding: 1rem;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .portfolio_container > h2 {
+    margin-top: 1rem;
+  }
+  .portfolio-row {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .portfolio-row-2 {
+    flex-direction: column;
+  }
+  .portfolio-col {
+    width: 100%;
+  }
+  .portfolio-content,
+  .portfolio-content-2 {
+    margin-top: 1.4rem;
+    padding-left: 0;
+  }
+  .portfolio-details,
+  .portfolio-details-2 {
+    padding: 1rem;
+  }
+}

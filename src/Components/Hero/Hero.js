@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import classes from "./Hero.module.css";
 import selfImg from "../../assets/imageSelf.png";
 import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { SiHashnode } from "react-icons/si";
 import { HashLink as Link } from "react-router-hash-link";
+import { gsap } from "gsap";
 
 const Hero = () => {
+  const heroContent = useRef(null);
+  const heroImg = useRef(null);
+  useEffect(() => {
+    gsap.fromTo(
+      [heroContent.current, heroImg.current],
+      { autoAlpha: 0, y: -10 },
+      { autoAlpha: 1, duration: 1, y: 10, stagger: 1.5, delay: 1 }
+    );
+  }, []);
+
   return (
     <div>
       <header className={classes["hero_container"]} id="home">
         <div className={classes["hero_col"]}>
-          <section className={classes["hero_content"]}>
+          <section className={classes["hero_content"]} ref={heroContent}>
             <div className={classes["hero_top"]}>
               <span>Frontend Developer</span>
               <span>Technical Writer</span>
@@ -37,7 +48,12 @@ const Hero = () => {
         <div className={classes["hero_col"]}>
           <div className={classes["blob_img"]}></div>
           <div>
-            <img src={selfImg} alt="emma" className={classes["hero_img"]} />
+            <img
+              src={selfImg}
+              alt="emma"
+              className={classes["hero_img"]}
+              ref={heroImg}
+            />
           </div>
           <section className={classes["profiles"]}>
             <div className={classes["profiles_container"]}>
