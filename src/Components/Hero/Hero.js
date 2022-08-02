@@ -41,7 +41,13 @@ const Hero = () => {
               <Link to="#portfolio" className={classes["btn-portfolio"]}>
                 <button>View portfolio</button>
               </Link>
-              <button>Download CV</button>
+              <a
+                href="https://drive.google.com/file/d/1vfw-TMv9Wsg6zpPI454PnvH6Azn2bgOw/view?usp=sharing"
+                download
+                className={classes.cv}
+              >
+                Download CV
+              </a>
             </div>
           </section>
         </div>

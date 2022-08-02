@@ -69,8 +69,13 @@
 }
 
 .p-icon-2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-left: 2rem;
+  color: white;
+}
+.p-icon-2:hover,
+.p-icon-2:active {
+  color: var(--sec-color);
 }
 .p-icon:hover,
 .p-icon:active {

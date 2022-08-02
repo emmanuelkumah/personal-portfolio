@@ -56,6 +56,17 @@
   background-color: transparent;
   border: 1px solid var(--sec-color);
 }
+.cv {
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid var(--sec-color);
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+.cv:hover,
+.cv:active {
+  border: 2px solid green;
+}
 .btn_container > button:nth-child(2) {
   background-color: transparent;
   border: 1px solid #fff;
@@ -133,9 +144,7 @@
   .btn-portfolio > button {
     width: 80%;
   }
-  .btn_container > button:nth-child(2) {
-    width: 80%;
-  }
+
   .profiles {
     top: 42%;
   }
